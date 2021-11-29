@@ -200,3 +200,98 @@ class AboutScreen extends StatelessWidget {
   }
 }
 ```
+
+# Stream builders
+Special widget that does not have any UI of its own but instead allow you to listen to or unwrap a `Future` or a `Stream`. A `Future` allows you to fetch a one-time async value whilst a `Stream` allows you fetch to fetch multiple async values. With `Future` we can read a single value from firestore, whilst with `Stream` we can read a document and listen to real time updates.
+
+```
+class DemoApp extends StatelessWidget {
+  const DemoApp({ Key? key }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return StreamBuilder<int>(
+      stream: Stream.fromIterable([1,2,3,4]),
+      builder: (context, snapshot) {
+        var count = snapshot.data;
+
+        // Add UI here
+
+        return Text('$count');
+      },
+    );
+  }
+}
+```
+
+# State Management
+Stateful widgets have the following limitations:
+- State is only available in that class (child widgets that also need to use the state will therefore need you to pass it in as an argument or input property)
+- Makes it harder to decouple the business logic from the UI
+
+There are 4 main libraries for state management:
+- RiverPod
+- Provider
+- Block
+- Cubit
+
+
+We focus on `Provider`. `Provider` is one of the most popular state management libraries in Flutter. It wraps `InheritedWidget` and provides an easy way to share data between widgets.
+
+1. Define State:
+```
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+class CounterState extends ChangeNotifier {
+
+  int count = 0;
+
+  updateCount() {
+    count++;
+    notifyListeners();
+  }
+
+}
+```
+
+The purpose of the built-in class `ChangeNotifier` is to define any data that changes throughout the lifecycle of the app and provide methods to mutate that data. `notifyListeners()` tells the flutter framework to re-render.
+
+
+2. Provide State:
+```
+class CounterApp extends StatelessWidget {
+  const CounterApp({ Key? key }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+
+    return ChangeNotifierProvider(
+      create: (context) => CounterState(),
+      child: const CountText(),
+      
+    );
+  }
+}
+```
+
+The widget `ChangeNotifierProvider` will guarantee that all of its children wil have access to the data. The context of `ChangeNotifierProvider` will be an instance of the class created before.
+
+3. Read State:
+```
+class CountText extends StatelessWidget {
+  const CountText({ Key? key }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+
+    var state = context.watch<CounterState>();
+    var state2 = Provider.of<CounterState>(context);
+
+    return Text('${state.count}');
+  }
+}
+```
+
+The state can then be created withing by using `context.watch<CounterState>()` or `Provider.of<CounterState>(context)`.
+
