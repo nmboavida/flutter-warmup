@@ -1,4 +1,4 @@
-package io.fireship.myapp
+package com.nunotest.fireshipapp
 
 import io.flutter.embedding.android.FlutterActivity
 
