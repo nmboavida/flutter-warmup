@@ -1,3 +1,4 @@
+import 'package:fireship_app/routes.dart';
 import 'package:flutter/material.dart';
 
 // Import the firebase_core plugin
@@ -32,16 +33,16 @@ class _AppState extends State<App> {
       builder: (context, snapshot) {
         // Check for errors
         if (snapshot.hasError) {
-          return Text('error');
+          return const Text('error');
         }
 
         // Once complete, show your application
         if (snapshot.connectionState == ConnectionState.done) {
-          return MaterialApp();
+          return MaterialApp(routes: appRoutes);
         }
 
         // Otherwise, show something whilst waiting for initialization to complete
-        return Text('loading');
+        return const Text('loading');
       },
     );
   }
