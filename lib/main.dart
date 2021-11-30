@@ -1,4 +1,5 @@
 import 'package:fireship_app/routes.dart';
+import 'package:fireship_app/theme.dart';
 import 'package:flutter/material.dart';
 
 // Import the firebase_core plugin
@@ -38,7 +39,7 @@ class _AppState extends State<App> {
 
         // Once complete, show your application
         if (snapshot.connectionState == ConnectionState.done) {
-          return MaterialApp(routes: appRoutes);
+          return MaterialApp(routes: appRoutes, theme: appTheme);
         }
 
         // Otherwise, show something whilst waiting for initialization to complete
