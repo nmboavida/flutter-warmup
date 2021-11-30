@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>675013967448-nl66mt7tamvdma33jj3m59p8ir8bunu2.apps.googleusercontent.com</string>
+	<string>435714236912-di6muqog0p5adn9qkd19el9r1lfs580c.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.675013967448-nl66mt7tamvdma33jj3m59p8ir8bunu2</string>
+	<string>com.googleusercontent.apps.435714236912-di6muqog0p5adn9qkd19el9r1lfs580c</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAbrgiCXAjflNFoUlhrpZzbdgs_F5ME6WA</string>
+	<string>AIzaSyDEegoq3_IZNJ2VskkpsLn_ONv4jSueyoc</string>
 	<key>GCM_SENDER_ID</key>
-	<string>675013967448</string>
+	<string>435714236912</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.nunotest.fireshipapp</string>
 	<key>PROJECT_ID</key>
-	<string>fireship-app-7674b</string>
+	<string>fireship-app-8b23a</string>
 	<key>STORAGE_BUCKET</key>
-	<string>fireship-app-7674b.appspot.com</string>
+	<string>fireship-app-8b23a.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:675013967448:ios:5825ef9f8905281d0fd42d</string>
+	<string>1:435714236912:ios:c3db49932f45fdd304fd35</string>
 </dict>
 </plist>
