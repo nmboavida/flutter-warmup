@@ -1,20 +1,20 @@
 {
   "project_info": {
-    "project_number": "675013967448",
-    "project_id": "fireship-app-7674b",
-    "storage_bucket": "fireship-app-7674b.appspot.com"
+    "project_number": "435714236912",
+    "project_id": "fireship-app-8b23a",
+    "storage_bucket": "fireship-app-8b23a.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:675013967448:android:f3b57ed7304cd0100fd42d",
+        "mobilesdk_app_id": "1:435714236912:android:d4ab97b82a403ade04fd35",
         "android_client_info": {
           "package_name": "com.nunotest.fireshipapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "675013967448-tr5mmnclct0blj2u5mpmgitfstjmj8mp.apps.googleusercontent.com",
+          "client_id": "435714236912-q40cngkru49pvctsclhrremmpab7ki8v.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.nunotest.fireshipapp",
@@ -22,24 +22,24 @@
           }
         },
         {
-          "client_id": "675013967448-sbtenehftdcqkemgo76p0khi75mil137.apps.googleusercontent.com",
+          "client_id": "435714236912-6ce6hkhket8knia4ikutlglulj5r2v0t.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCYyjk1-GFEAWqDLHciFe_ei33604oVIrU"
+          "current_key": "AIzaSyD151CnPt3arz0QNwOBpgA_UKC9wDGh3EQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "675013967448-sbtenehftdcqkemgo76p0khi75mil137.apps.googleusercontent.com",
+              "client_id": "435714236912-6ce6hkhket8knia4ikutlglulj5r2v0t.apps.googleusercontent.com",
               "client_type": 3
             },
             {
-              "client_id": "675013967448-nl66mt7tamvdma33jj3m59p8ir8bunu2.apps.googleusercontent.com",
+              "client_id": "435714236912-di6muqog0p5adn9qkd19el9r1lfs580c.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
                 "bundle_id": "com.nunotest.fireshipapp"
