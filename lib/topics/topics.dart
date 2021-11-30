@@ -1,3 +1,4 @@
+import 'package:fireship_app/shared/bottom_nav.dart';
 import 'package:flutter/material.dart';
 
 class TopicsScreen extends StatelessWidget {
@@ -5,6 +6,8 @@ class TopicsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const Scaffold(
+      bottomNavigationBar: BottomNavBar(),
+    );
   }
 }
