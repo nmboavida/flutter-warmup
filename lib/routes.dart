@@ -9,6 +9,6 @@ var appRoutes = {
   '/': (context) => HomeScreen(),
   '/login': (context) => LoginScreen(),
   '/topics': (context) => TopicsScreen(),
-  'profile': (context) => ProfileScreen(),
+  '/profile': (context) => ProfileScreen(),
   '/about': (context) => AboutScreen(),
 };
