@@ -44,4 +44,19 @@ class FirestoreService {
       }
     });
   }
+
+  // Update the current user's report document after completing quiz
+  Future<void> updateUserReport(Quiz, quiz) {
+    // ! is assertion operator
+    var user = AuthService().user!;
+    var ref = _db.collection('reports').doc(user.uid);
+
+    var data = {
+      'total': FieldValue.increment(1),
+      'topics': {quiz.topic: FieldValue.arrayUnion([quiz.id])}
+    };
+
+    // Merge true options make it a non-destructive write
+    return ref.set(data, SetOptions(merge: true));
+  }
 }
