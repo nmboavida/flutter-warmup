@@ -5,6 +5,8 @@ import 'package:fireship_app/services/firestore.dart';
 import 'package:fireship_app/shared/bottom_nav.dart';
 import 'package:fireship_app/shared/loading.dart';
 import 'package:fireship_app/shared/error.dart';
+import 'package:fireship_app/topics/topic_item.dart';
+
 
 class TopicsScreen extends StatelessWidget {
   const TopicsScreen({Key? key}) : super(key: key);
@@ -33,7 +35,7 @@ class TopicsScreen extends StatelessWidget {
               padding: const EdgeInsets.all(20.0),
               crossAxisSpacing: 10.0,
               crossAxisCount: 2,
-              children: topics.map((t) => Text(t.title)).toList(),
+              children: topics.map((topic) => TopicItem(topic: topic)).toList(),
             ),
             bottomNavigationBar: const BottomNavBar(),
           );

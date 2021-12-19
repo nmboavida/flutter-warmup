@@ -1,0 +1,1 @@
+`MediaQuery` allows us to have information about the viewport at runtime, and therefore we can frame the width size proportional to viewport.
